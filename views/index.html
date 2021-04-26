@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+    <link rel="stylesheet" href="/css/form.css" >
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/form.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/css/intlTelInput.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/intlTelInput.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <form id="contact" >
+            <h3>Contact Us</h3>
+            <span id="success-message">Successfully Added</span>
+            <span id="error-message"></span>
+            <fieldset>
+                <input placeholder="Your name" type="text" id="name" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" type="email" id="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <div class="input-group input-group-lg">
+                    <input id="phone" type="tel"  required>
+                </div>
+            </fieldset>
+            <fieldset>
+
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
